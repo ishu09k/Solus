@@ -1,0 +1,943 @@
+*{
+  margin: 0px;
+  padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* header  */
+
+nav{
+    width: 100%;
+    height: 8rem;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 8px auto;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-logo img {
+    width: 100%;
+    height: 7rem;
+  }
+  .nav-links ul {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-links li {
+    list-style: none;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+  .nav-links span li {
+    padding: .5rem;
+    background-color: #005a86;
+    border-radius: .5rem;
+  }
+  .nav-links span li a {
+    color: white;
+  }
+
+  /* Hamburger Menu */
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 6px;
+  }
+  
+  .nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #005a86;
+    border-radius: 3px;
+    transition: 0.3s ease;
+  }
+  
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  /* main page */
+
+  .main-page{
+    width: 100%;
+    min-height: 45rem;
+    height: auto;
+    margin: 0 auto;
+    background-image: linear-gradient(135deg, rgba(6, 120, 180, 0.75) 0%, rgba(3, 65, 105, 0.75) 100%), url(Pics/main-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
+  }
+  
+  .main-txt {
+    position: relative;
+    width: 65%;
+    z-index: 10;
+    text-align: center;
+    color: white;
+  }
+  
+  #main-p{
+    padding: 0.9rem 2rem;
+    background-color: #ff6b35;
+    border-radius: 50px;
+    display: inline-block;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+  }
+ 
+  .main-txt h2 {
+    font-size: 62px;
+    color: white;
+    font-weight: 900;
+    margin: 1.5rem 0;
+    line-height: 1.1;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+  }
+  
+  .main-txt h2 span {
+    color: #ff6b35;
+    display: block;
+  }
+ 
+  .main-txt p {
+    line-height: 1.8;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 300;
+  }
+
+   /* page-2 */
+
+   .page-2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 4rem auto;
+    justify-content: space-between;
+    height: 11rem;
+  }
+  .page-2-txt {
+    width: 50%;
+  }
+  .page-2-txt h2 {
+    color: #0678b4;
+    font-weight: 800;
+    margin: 1rem auto;
+  }
+  .page-2-txt p {
+    line-height: 1.5;
+  }
+  .page-2-img img {
+    width: 18rem;
+    height: 12rem;
+  }
+  /* page-2-box */
+  .page-2-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 16rem;
+    margin: 4rem auto;
+    justify-content: space-between;
+  }
+  .page-2-box-1 {
+    height: 12.5rem;
+    width: 17rem;
+    border: 2px solid black;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    box-shadow: 2px 2px 10px gray
+  }
+  .page-2-box-1 img {
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    margin-left: 5rem;
+  }
+  .page-2-box-1 p {
+    color: #005a86;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .page-2-box-1 li {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-left: 12px;
+  }
+
+  /* page-4 */
+  .page-4 {
+    height: 13rem;
+    width: 100%;
+    background: linear-gradient(135deg, #0678b4 0%, #05527f 100%);
+    margin-bottom: 4rem;
+  }
+  .page-4 h2 {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+  }
+  .page-4-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 55%;
+  }
+  .page-4-bx {
+    height: 7rem;
+    width: 11rem;
+    background-color: white;
+    border-radius: .3rem;
+  }
+
+  /* page-5 */
+  .page-5{
+    background-image: url(Pics/bt.png);
+    background-size: contain;
+    height: 30rem;
+    width: 75%;
+    margin: 4rem auto;
+    display: flex;
+  }
+  .page-5-img img {
+    height: 28rem;
+    width: 20rem;
+  }
+  .page-5-txt {
+    padding: 6rem;
+  }
+  .page-5-txt h2 {
+    color: #0678b4;
+    font-weight: 800;
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+  .page-5-txt p {
+    line-height: 1.5;
+    width: 75%;
+    margin-bottom: 2rem;
+  }
+  #btn {
+    padding: 1rem 3rem;
+    background-color: #ff6b35;
+    display: inline;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+
+  /* page-7 */
+  .page-7 {
+    width: 75%;
+    margin: 2rem auto;
+    height: 35rem;
+    margin-top: -2rem;
+    background-image: url(Pics/bt.png);
+    background-size: cover;
+  }
+  .page-7 img {
+    height: 25rem;
+  }
+  .page-7 h2 {
+    color: #0678b4;
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  .page-7 p {
+    line-height: 1.5;
+  }
+
+  /* page-8 */
+
+  .page-8 {
+    width: 75%;
+    margin: 4rem auto;
+    height: 30rem;
+  }
+  .page-8 h2 {
+    margin: 2rem auto;
+    text-align: center;
+    color: #0678b4;
+    font-weight: 600;
+  }
+  .page-8-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .page-8-card-1 {
+    height: 20rem;
+    width: 16rem;
+    position: relative;
+    background-image: url(Pics/black.png);
+    background-size: contain;
+  }
+  .page-8-card-1 img {
+    width: 100%;
+    height: 25.5rem;
+  }
+  .page-8-card-1 p {
+    position: absolute;
+    bottom: -86px;
+    padding: 1.5rem;
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    opacity: .8;
+    background-color: #024;
+  }
+
+  /* page-9 */
+   
+  #blog-h2 {
+    color: #0678b4;
+    font-weight: 800;
+    margin: .5rem;
+  }
+  #blog-p {
+    color: gray;
+    margin-bottom: 2rem;
+  }
+  .page-9 {
+    width: 75%;
+    margin: 4rem auto;
+  }
+  .page-9-blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .page-9-blog-1 {
+    height: 24rem;
+    width: 22rem;
+    box-shadow: 2px 2px 10px gray;
+  }
+  .page-9-blog-1 img {
+    width: 100%;
+    height: 12rem;
+  }
+  .blog-1-txt {
+    padding: 1rem;
+    line-height: 1.3rem;
+  }
+  .blog-1-txt p {
+    color: gray;
+    font-size: 11px;
+    margin-bottom: 1rem;
+  }
+  .blog-1-txt h2 {
+    font-size: 18px;
+  }
+  .blog-1-txt a {
+    text-decoration: navajowhite;
+    color: blue;
+    font-size: 14px;
+  }
+  .pg-9-btn {
+    text-align: center;
+    margin: 3rem auto;
+  }
+  .pg-9-btn a {
+    text-decoration:none;
+    color: white;
+    background-color: #ff6b35;
+    padding: .5rem 2rem;
+    border-radius: 0.2rem;
+  }
+  .page-10{
+    background-image: url(Pics/page-11.png);
+    background-size: contain;
+    margin-left: 28rem;
+    height: 25rem;
+    position: relative;
+  }
+  .page-10-txt {
+    position: absolute;
+    top: 6rem;
+    left: -25rem;
+    width: 60%;
+    line-height: 1.5;
+  }
+  .page-10-txt h2 {
+    color: #0678b4;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .page-10-txt p {
+    color: grey;
+    margin-bottom: 2rem;
+  }
+  .page-10-txt a {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6b35;
+    padding: .5rem 2rem;
+    border-radius: 0.2rem;
+  }
+
+
+  /* footer section */
+
+  footer {
+    background: linear-gradient(135deg, #0678b4 0%, #05527f 100%);
+    height: 24rem;
+  }
+  .footer-sec {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 24rem;
+  }
+  .footer-sec-1 {
+    width: 22%;
+    height: 4rem;
+  }
+  .footer-sec-1 img {
+    width: 10rem;
+    height: 6rem;
+  }
+  .footer-sec-1 p {
+    line-height: 2.5;
+    color: #bdbdbd;
+    margin-bottom: 1.5rem;
+  }
+  #footer-h3 {
+    color: white;
+    margin: 1rem auto;
+    font-size: 18px;
+    margin-left: 2rem;
+  }
+  .icons {
+    display: flex;
+    gap: 1rem;
+  }
+  .icons li {
+    list-style: none;
+  }
+  .icons a {
+    text-decoration: none;
+    padding: .3rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .li-item {
+    margin-left: 2rem;
+  }
+  .li-item li {
+    list-style: none;
+  }
+  .li-item a {
+    color: #bdbdbd;
+    text-decoration: none;
+    line-height: 2;
+  }
+
+  /* RESPONSIVE DESIGN - TABLETS (768px and below) */
+  @media (max-width: 768px) {
+    .navbar {
+      width: 90%;
+      flex-wrap: nowrap;
+      gap: 1rem;
+    }
+    
+    .nav-logo img {
+      width: 80%;
+      height: 4rem;
+    }
+    
+    .nav-toggle {
+      display: flex;
+    }
+    
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      flex-direction: column;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    
+    .nav-links.active {
+      display: flex;
+    }
+    
+    .nav-links ul {
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+    }
+    
+    .nav-links a {
+      font-size: 16px;
+    }
+    
+    .main-page {
+      width: 100%;
+      min-height: 30rem;
+      padding: 3rem 1.5rem;
+      justify-content: center;
+    }
+    
+    .main-txt {
+      width: 90%;
+      text-align: center;
+    }
+    
+    #main-p {
+      font-size: 12px;
+      padding: 0.6rem 1.2rem;
+    }
+    
+    .main-txt h2 {
+      font-size: 36px;
+      margin: 1rem 0;
+    }
+    
+    .main-txt p {
+      font-size: 14px;
+    }
+    
+    .page-2 {
+      width: 90%;
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .page-2-txt {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .page-2-img img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .page-2-box {
+      width: 90%;
+      margin: 2rem auto;
+      flex-direction: column;
+      height: auto;
+      gap: 1.5rem;
+    }
+    
+    .page-2-box-1 {
+      width: 100%;
+    }
+    
+    .page-4 {
+      height: auto;
+    }
+    
+    .page-4-boxes {
+      width: 90%;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .page-4-bx {
+      width: 100%;
+      height: 6rem;
+    }
+    
+    .page-5 {
+      width: 90%;
+      flex-direction: column;
+      height: auto;
+      padding: 2rem 0;
+    }
+    
+    .page-5-img img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1.5rem;
+    }
+    
+    .page-5-txt {
+      padding: 1.5rem;
+    }
+    
+    .page-5-txt p {
+      width: 100%;
+    }
+    
+    .page-7 {
+      width: 90%;
+      height: auto;
+      padding: 2rem 0;
+    }
+    
+    .page-7 img {
+      height: 15rem;
+    }
+    
+    .page-8 {
+      width: 90%;
+      height: auto;
+    }
+    
+    .page-8-card {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .page-8-card-1 {
+      width: 100%;
+      height: 15rem;
+    }
+    
+    .page-8-card-1 img {
+      height: 15rem;
+    }
+    
+    .page-8-card-1 p {
+      bottom: -80px;
+      padding: 1rem;
+    }
+    
+    .page-9 {
+      width: 90%;
+    }
+    
+    .page-9-blog {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .page-9-blog-1 {
+      width: 100%;
+    }
+    
+    .page-10 {
+      margin-left: 0;
+      height: auto;
+      background-size: cover;
+      padding: 2rem 0;
+    }
+    
+    .page-10-txt {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    .page-10-txt h2 {
+      font-size: 1.8rem;
+    }
+    
+    footer {
+      height: auto;
+    }
+    
+    .footer-sec {
+      width: 90%;
+      flex-direction: column;
+      gap: 2rem;
+      height: auto;
+      align-items: flex-start;
+    }
+    
+    .footer-sec-1 {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  /* RESPONSIVE DESIGN - MOBILE (480px and below) */
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px;
+    }
+    
+    nav {
+      height: auto;
+    }
+    
+    .navbar {
+      width: 95%;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .nav-logo img {
+      width: 60%;
+      height: 3rem;
+    }
+    
+    .nav-links ul {
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    
+    .nav-links a {
+      font-size: 14px;
+    }
+    
+    .nav-links span li {
+      padding: 0.3rem 0.8rem;
+    }
+    
+    .main-page {
+      width: 100%;
+      min-height: 22rem;
+      padding: 2rem 1rem;
+      justify-content: center;
+    }
+    
+    .main-txt {
+      width: 95%;
+      text-align: center;
+    }
+    
+    #main-p {
+      font-size: 11px;
+      padding: 0.5rem 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .main-txt h2 {
+      font-size: 26px;
+      margin: 0.8rem 0;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+    
+    .main-txt p {
+      font-size: 13px;
+      line-height: 1.5;
+      margin: 1rem 0 0 0;
+    }
+    
+    .page-2 {
+      width: 95%;
+      margin: 2rem auto;
+    }
+    
+    .page-2-txt h2 {
+      font-size: 20px;
+    }
+    
+    .page-2-txt p {
+      font-size: 13px;
+    }
+    
+    .page-2-img img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .page-2-box {
+      width: 95%;
+      margin: 2rem auto;
+    }
+    
+    .page-2-box-1 {
+      width: 100%;
+      padding: 1rem;
+    }
+    
+    .page-2-box-1 img {
+      margin-left: 3rem;
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+    
+    .page-2-box-1 p {
+      font-size: 14px;
+    }
+    
+    .page-4 h2 {
+      font-size: 20px;
+    }
+    
+    .page-4-boxes {
+      width: 95%;
+    }
+    
+    .page-4-bx {
+      height: 5rem;
+    }
+    
+    .page-5 {
+      width: 95%;
+      padding: 1rem 0;
+    }
+    
+    .page-5-img img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .page-5-txt {
+      padding: 1rem;
+    }
+    
+    .page-5-txt h2 {
+      font-size: 18px;
+    }
+    
+    .page-5-txt p {
+      font-size: 13px;
+      width: 100%;
+    }
+    
+    #btn {
+      padding: 0.8rem 1.5rem;
+      font-size: 13px;
+    }
+    
+    .page-7 {
+      width: 95%;
+      padding: 1rem 0;
+    }
+    
+    .page-7 img {
+      height: 10rem;
+    }
+    
+    .page-7 h2 {
+      font-size: 18px;
+    }
+    
+    .page-7 p {
+      font-size: 13px;
+    }
+    
+    .page-8 {
+      width: 95%;
+    }
+    
+    .page-8 h2 {
+      font-size: 18px;
+    }
+    
+    .page-8-card-1 {
+      height: 12rem;
+    }
+    
+    .page-8-card-1 img {
+      height: 12rem;
+    }
+    
+    .page-8-card-1 p {
+      font-size: 12px;
+      bottom: -65px;
+      padding: 0.8rem;
+    }
+    
+    .page-9 {
+      width: 95%;
+    }
+    
+    #blog-h2 {
+      font-size: 18px;
+    }
+    
+    #blog-p {
+      font-size: 12px;
+    }
+    
+    .page-9-blog-1 {
+      height: 20rem;
+      width: 100%;
+    }
+    
+    .page-9-blog-1 img {
+      height: 10rem;
+    }
+    
+    .blog-1-txt {
+      padding: 0.8rem;
+    }
+    
+    .blog-1-txt h2 {
+      font-size: 14px;
+    }
+    
+    .blog-1-txt a {
+      font-size: 12px;
+    }
+    
+    .pg-9-btn a {
+      padding: 0.6rem 1.5rem;
+      font-size: 12px;
+    }
+    
+    .page-10 {
+      height: auto;
+      margin-left: 0;
+    }
+    
+    .page-10-txt {
+      width: 95%;
+      margin: 0 auto;
+    }
+    
+    .page-10-txt h2 {
+      font-size: 1.3rem;
+    }
+    
+    .page-10-txt a {
+      padding: 0.6rem 1.5rem;
+      font-size: 12px;
+    }
+    
+    #footer-h3 {
+      margin-left: 0;
+      font-size: 16px;
+    }
+    
+    .footer-sec-1 img {
+      width: 8rem;
+      height: 5rem;
+    }
+    
+    .li-item {
+      margin-left: 0;
+    }
+  }
